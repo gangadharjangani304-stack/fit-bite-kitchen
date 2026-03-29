@@ -38,7 +38,7 @@ export default function ProductsPage() {
   const addToCart = store.addToCart || store.addItem || (() => console.log('Cart function not found'));
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/products')
+    fetch('https://fit-bite-backend.onrender.com/api/products')
       .then((res) => {
         if (!res.ok) throw new Error('Backend not responding');
         return res.json();

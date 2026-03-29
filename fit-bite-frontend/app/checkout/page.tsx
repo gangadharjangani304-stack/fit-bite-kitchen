@@ -76,7 +76,7 @@ export default function CheckoutPage() {
       };
 
       // 🚀 2. Send it to your backend server!
-      const response = await fetch('http://localhost:5000/api/orders', {
+      const response = await fetch('https://fit-bite-backend.onrender.com/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -10,7 +10,7 @@ export default function AdminDashboard() {
   const fetchOrders = async () => {
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5000/api/orders');
+      const res = await fetch('https://fit-bite-backend.onrender.com/api/orders');
       if (res.ok) {
         const data = await res.json();
         // Reverse so the newest orders are at the top!
